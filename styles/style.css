@@ -1,15 +1,22 @@
-* {margin: 0px; padding: 0px; border: 1px solid black;}
+* {margin: 0px; padding: 0px; }
+
+
 .container{
   max-width:500px;
   max-height:500px;
   margin: 0 auto;
-
-
+  top: 50px;
+  position: relative;
+  font-size: 0;
+  border: 1px solid black;
 }
 .sketch {
-  float: right;
-
   display:inline-block;
+  margin: 0;
 }
 
-button {border: none;}
+button {
+  border: none;
+  top: 100%;
+
+}

@@ -1,5 +1,5 @@
 var gridSize = 16
-var cubeSize = 436/(gridSize);
+var cubeSize = 468/(gridSize);
 
 $(document).ready(function(){
   for(var x = 0; x <= gridSize-1; x++) {
@@ -12,6 +12,7 @@ $(document).ready(function(){
 
       $(".sketch").css("height",cubeSize);
       $(".sketch").css("width",cubeSize);
+      
 
     };
   };
