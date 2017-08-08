@@ -1,21 +1,18 @@
 var gridSize = 16
-var cubeSize = 468/(gridSize);
+var cubeSize = 500/(gridSize);
 var black = true;
 $(document).ready(function(){
+
+  // for loop to generate grid of cubes
   for(var x = 0; x <= gridSize-1; x++) {
     for(var i = 0; i <= gridSize-1; i++) {
       $(".container").append("<div class='sketch'></div>");
-    //  $(".container").css("grid-template-columns","(" + gridSize + "," +
-      //  cubeSize + "px");
-      //$(".container").css("grid-template-rows" , "(" + gridSize + "," +
-        //cubeSize + "px");
-
       $(".sketch").css("height",cubeSize);
       $(".sketch").css("width",cubeSize);
-
-
     };
   };
+
+  //adds color to hover the else is the random color generator
   $(".sketch").hover(function(){
     if (black) {
         $(this).css("background-color","black");
@@ -26,6 +23,8 @@ $(document).ready(function(){
         $(this).css("background-color", "rgb(" + r + "," + g + "," + b + ")")
     };
   });
+
+  //buttons
   $("#color").click(function(){
     if(black){black = false;} else {black = true;}});
   $("#reset").click(function(){
