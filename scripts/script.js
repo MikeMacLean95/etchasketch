@@ -1,6 +1,6 @@
 var gridSize = 16
 var cubeSize = 468/(gridSize);
-
+var black = true;
 $(document).ready(function(){
   for(var x = 0; x <= gridSize-1; x++) {
     for(var i = 0; i <= gridSize-1; i++) {
@@ -12,14 +12,23 @@ $(document).ready(function(){
 
       $(".sketch").css("height",cubeSize);
       $(".sketch").css("width",cubeSize);
-      
+
 
     };
   };
   $(".sketch").hover(function(){
-    $(this).css("background-color","black");
+    if (black) {
+        $(this).css("background-color","black");
+    } else {
+        var r = Math.floor(Math.random()*255);
+        var g = Math.floor(Math.random()*255);
+        var b = Math.floor(Math.random()*255);
+        $(this).css("background-color", "rgb(" + r + "," + g + "," + b + ")")
+    };
   });
-  $("button").click(function(){
+  $("#color").click(function(){
+    if(black){black = false;} else {black = true;}});
+  $("#reset").click(function(){
     $(".sketch").css("background-color","white");
   });
 });
