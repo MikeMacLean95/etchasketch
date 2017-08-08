@@ -1,0 +1,15 @@
+* {margin: 0px; padding: 0px; border: 1px solid black;}
+.container{
+  max-width:500px;
+  max-height:500px;
+  margin: 0 auto;
+
+
+}
+.sketch {
+  float: right;
+
+  display:inline-block;
+}
+
+button {border: none;}
