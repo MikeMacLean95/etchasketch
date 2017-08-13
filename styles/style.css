@@ -1,4 +1,4 @@
-* {margin: 0px; padding: 0px; }
+* {margin: 0px; padding: 0px;}
 
 
 .container{
@@ -15,8 +15,22 @@
   margin: 0;
 }
 
-button, form , input{
+button, form , input, p{
   border: none;
-  top: 100%;
+  display: inline;
+  font-size: 12px;
+}
 
+.buttonholder, .info {
+  text-align: center;
+  margin: 0 auto;
+  list-style-type: none;
+  top: 35px;
+  position: relative;
+  min-width: 500px;
+}
+
+p {
+  background-color: #abeac0;
+  padding-left: 25px; padding-right: 25px;
 }
