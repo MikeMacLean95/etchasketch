@@ -15,7 +15,7 @@
   margin: 0;
 }
 
-button {
+button, form , input{
   border: none;
   top: 100%;
 
